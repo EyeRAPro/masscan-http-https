@@ -243,7 +243,7 @@ banner1_create(void)
 
     banner_http.init(b);
     int my_var = 1;
-    for(my_var=1;my_var<65535;my_var++)
+    for(my_var=1;my_var<=65535;my_var++)
         //b->tcp_payloads[my_var] = &banner_http;
         b->tcp_payloads[my_var] = (void*)&banner_ssl;
 
